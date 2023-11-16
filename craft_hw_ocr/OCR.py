@@ -41,8 +41,8 @@ def load_models():
   """
   Loading TrOCR model which has achieved SOTA metrics on IAM handwriting dataset
   """
-  processor = TrOCRProcessor.from_pretrained("microsoft/trocr-base-handwritten")
-  model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-base-handwritten")
+  processor = TrOCRProcessor.from_pretrained("microsoft/trocr-large-printed")
+  model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-large-printed")
   craft = Craft(output_dir=None, 
                 crop_type="poly",
                 export_extra=False,
